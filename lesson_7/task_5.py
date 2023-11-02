@@ -1,5 +1,8 @@
 import json
 
-with open('file_03.json', 'r') as file:
+with open('file_04.json', 'r') as file:
     data = json.load(file)
-    print(data)
+    name = data['name']
+    surname = data['surname']
+    age = int(data['age'])
+    print(f'{name} {surname} {age}')
